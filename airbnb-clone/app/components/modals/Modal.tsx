@@ -27,7 +27,7 @@ const Modal: React.FC<ModalProps> = ({
         setShowModal(isOpen)
     }, [isOpen]);
 
-    const handleClose = useCallback(()=>{
+    const handleClose = useCallback(()=> {
         //닫기 버튼을 클릭했을 때, disabled이면 아무것도 할당되지 않도록 한다.
         if (disabled) {
             return;
@@ -55,6 +55,7 @@ const Modal: React.FC<ModalProps> = ({
     if (!isOpen) {
        return null;
     }
+
     return(
         <>
             {/*모달창 띄우면 뒷배경 까매지는 것*/}
